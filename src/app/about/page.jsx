@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function index() {
   return (
@@ -32,7 +33,12 @@ export default function index() {
               </p>
             </div>
             <div className="about-image flex h-full items-start lg:mt-[-96px]">
-              <img src="/asset/img/brilly-photo.jpeg" alt="" />
+              <Image
+                src="/asset/img/brilly-photo.jpeg"
+                width={400}
+                height={400}
+                alt=""
+              />
             </div>
           </div>
           <div className="content my-24">

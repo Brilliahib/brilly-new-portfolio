@@ -1,4 +1,5 @@
 import style from "./style.module.scss";
+import Image from "next/image";
 
 export default function index() {
   return (
@@ -20,10 +21,11 @@ export default function index() {
           </div>
           <div className="contact mt-24 flex gap-x-8">
             <div className="contact-img">
-              <img
+              <Image
                 src="/asset/img/brilly-photo.jpeg"
                 alt=""
                 width={150}
+                height={150}
                 className="rounded-full"
               />
             </div>

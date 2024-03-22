@@ -1,4 +1,9 @@
+// next.config.js
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  images: {
+    domains: ["cdn.dribbble.com"], // Tambahkan domain gambar di sini
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
