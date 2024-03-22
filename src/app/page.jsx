@@ -2,7 +2,7 @@
 import ProjectSection from "../components/Section/project";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import Preloader from "../components/Preloader";
+import Preloader from "../components/PreLoader";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
