@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useRef } from "react";
 import Image from "next/image";
 
 export default function index() {
@@ -24,7 +25,7 @@ export default function index() {
               }}
             />
           </div>
-          <div className="about flex grid grid-cols-2 mt-24 mb-48">
+          <div className="about flex grid grid-cols-2 mt-24 mb-48 gap-x-12">
             <div className="about-text">
               <p className="text-lg leading-loose tracking-wider">
                 I am a computer engineering student at Diponegoro University who
@@ -32,11 +33,11 @@ export default function index() {
                 development
               </p>
             </div>
-            <div className="about-image flex h-full items-start lg:mt-[-96px]">
+            <div className="about-image flex h-full items-start">
               <Image
-                src="/asset/img/brilly-photo.jpeg"
-                width={400}
-                height={400}
+                src="/asset/img/brilly.jpg"
+                width={1000}
+                height={1000}
                 alt=""
               />
             </div>

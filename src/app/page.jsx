@@ -3,9 +3,19 @@ import ProjectSection from "../components/Section/project";
 import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import Preloader from "../components/PreLoader";
+import Lenis from "@studio-freight/lenis";
+import styles from "./page.module.scss";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
+  const lenis = new Lenis();
+
+  function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+
+  requestAnimationFrame(raf);
 
   useEffect(() => {
     (async () => {
@@ -32,17 +42,8 @@ export default function Home() {
             very interested in the software field, especially in website
             development
           </p>
-          <div className="flex gap-x-4 justify-center">
-            <button className="py-3 px-6 bg-black text-white rounded-lg">
-              Take with me
-            </button>
-            <button className="py-3 px-6 bg-white border border-black text-black rounded-lg">
-              See my work
-            </button>
-          </div>
         </section>
       </div>
-
       <ProjectSection />
     </>
   );

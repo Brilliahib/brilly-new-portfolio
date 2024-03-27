@@ -38,3 +38,11 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    .body {
+      padding: 20px 50px !important;
+    }
+  }
+}
